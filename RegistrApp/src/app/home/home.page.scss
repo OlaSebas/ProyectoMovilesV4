@@ -1,0 +1,43 @@
+ion-toolbar.custom-toolbar{
+  
+  --background: #012e55; /* Reemplaza esto con el color deseado */
+  color: white; /* Cambiar el color del texto si es necesario */
+  --min-height: 75px;
+}
+
+ion-toolbar.custom-toolbar2{
+
+  --background: #012e55; /* Reemplaza esto con el color deseado */
+  color: white; /* Cambiar el color del texto si es necesario */
+  font-size: 12px; /* Tamaño de letra pequeño */
+  text-align: center;
+}
+
+ion-content{
+  overflow: hidden;
+  --ion-background-color:#ffffff;
+
+  .margin{
+    margin: 50px auto 20px auto;
+  }
+  
+  ion-card-header strong {
+    font-size: 30px;
+  }
+
+  .botoncamaras {
+    margin-top: 2%;
+  }
+
+  ion-col div .logo {
+    margin: -10%;
+  }
+
+}
+
+
+
+ion-card{
+  --ion-background-color:#ffffff;
+
+}

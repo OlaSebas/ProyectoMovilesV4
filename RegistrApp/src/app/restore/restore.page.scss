@@ -1,0 +1,26 @@
+/// :#012e55
+ion-toolbar.custom-toolbar{
+    --background: #012e55; /* Reemplaza esto con el color deseado */
+    color: white; /* Cambiar el color del texto si es necesario */
+    --min-height: 100px;
+    }
+ion-toolbar.custom-toolbar2{
+    --background: #012e55; /* Reemplaza esto con el color deseado */
+    color: white; /* Cambiar el color del texto si es necesario */
+    font-size: 12px; /* Tamaño de letra pequeño */
+    text-align: center;
+    }
+ion-content{
+    overflow: hidden;
+    --ion-background-color:#ffffff; 
+
+    .margin{
+        margin: 100px auto 0px auto;
+    }
+    
+    .custom-input{
+        margin: 10px 0px 10px 0px;
+        
+      }
+      
+}

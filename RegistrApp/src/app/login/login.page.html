@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>RegistrApp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false" class="animate__animated animate__fadeIn" [fullscreen]="true">
+  <div class="margin">
+    <div class="card-container">
+      <ion-card>
+        <ion-row>
+          <ion-col size-md="3" size="12" class="ion-padding ion-blue-bkg">
+            <div class="ion-text-center">
+              <img
+                src="assets\img\kisspng-duoc-uc-logo-concepcin-central-academy-of-fine-a-duoc-5b2b29e55de220.5957473915295554293846-removebg-preview.png"
+                alt="Ionic logo" loading="lazy" width="120px" class="logo animate__animated animate__bounceInUp" />
+            </div>
+          </ion-col>
+          <ion-col size-md="9" size="12" class="welcome">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center"> Bienvenido al inicio de sesion!</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              <form>
+                <ion-input  label="Correo:" fill="outline" label-placement="floating" type="text"
+                  placeholder="Ingrese Correo"  class="custom-input" [(ngModel)]="user"></ion-input>
+                <ion-input  label="Passsword:" fill="outline" label-placement="floating" type="password" class="custom-input" [(ngModel)]="pwd"></ion-input>
+                <div class="ion-text-center ">
+                  <button type="submit" (click)="login()">Ingresar</button>
+                </div>
+                <div class="ion-text-center link">
+                  <a href="/restore">¿Olvido su contraseña?</a>
+                </div>
+              </form>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+  </div>
+
+  <ion-alert [isOpen]="isAlertOpen" header="Usuario y/o contraseña Incorrectos" [buttons]="alertButtons"
+    (didDismiss)="setOpen(false)">
+  </ion-alert>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar class="custom-toolbar2">
+    <ion-title size="small">App Programa por Elias, Leandro, Kathy y Seba</ion-title>
+  </ion-toolbar>
+</ion-footer>

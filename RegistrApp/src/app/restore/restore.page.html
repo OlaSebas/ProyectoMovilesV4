@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar">
+    <ion-title class="title-move">RegisterApp </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="false" class="animate__animated animate__bounceInDown ion-padding" [fullscreen]="true">
+  
+  <div class="margin">
+    <div class="card-container">
+      <ion-card>
+        <ion-row>
+          <ion-col size-md="3" size="12" class="ion-padding ion-blue-bkg">
+            <div class="ion-text-center animate__animated animate__flip animate__repeat-2	 animate__fast">
+              <!-- <img
+                src="https://pm1.aminoapps.com/6708/4be6b0b9c69cd135c52423b84086503e6940e083_00.jpg"
+                alt="Ionic logo" loading="lazy" width="100px" /> -->
+                <img
+                src="assets\img\kisspng-duoc-uc-logo-concepcin-central-academy-of-fine-a-duoc-5b2b29e55de220.5957473915295554293846-removebg-preview.png"
+                alt="Ionic logo" loading="lazy" width="120px" class="logo animate__animated animate__bounceInUp" />
+                <br>              
+            </div>
+            <p class="ion-text-center">Restaurar Contraseña</p>
+
+          </ion-col>
+          <ion-col size-md="9" size="12" class="welcome">
+            <ion-card-header>
+              <ion-card-title class="ion-text-center"> Ingrese Usuario</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+                  <ion-input label="Usuario:" fill="outline" label-placement="floating" type="text" placeholder="Ingrese Usuario" [(ngModel)]="user" inputmode="text" class="custom-input"></ion-input>
+                  <div class="ion-text-center">
+                <ion-button type="submit" shape="round" color="primary" (click)="restaurarContra()"> Restaurar Contraseña
+                </ion-button>
+                
+                
+              </div>
+              <ion-alert [isOpen]="isAlertOpen" header="Error" message="El Campo no puede estar Vacio" [buttons]="alertButtons" (didDismiss)="setOpen(false)">
+              </ion-alert>
+            </ion-card-content>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar class="custom-toolbar2">
+    <ion-title size="small">App Programa por Elias, Juan, Kathy y Seba</ion-title>
+  </ion-toolbar>
+</ion-footer>

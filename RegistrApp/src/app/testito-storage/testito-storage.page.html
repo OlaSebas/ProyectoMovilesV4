@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type='text/css'>
+  <!-- Agregar la referencia a los estilos de Ionic -->
+  <link href="https://cdn.jsdelivr.net/npm/ionic@5.6.7/dist/ionic/css/ionic.bundle.css" rel="stylesheet">
+  <!-- Agregar tu archivo de estilo personalizado (style.css) si es necesario -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <!-- Usar el componente Ionic para la página -->
+  <ion-app>
+    <!-- Usar el componente Ionic para la cabecera -->
+    <ion-header>
+      <!-- Usar el componente Ionic para la barra de navegación -->
+      <ion-toolbar>
+        <ion-title>Tabs</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <!-- Usar el componente Ionic para el contenido de la página -->
+    <ion-content>
+      <!-- Usar el componente Ionic para la pestaña de navegación -->
+      <ion-tabs>
+        <!-- Pestaña "All" -->
+        <ion-tab tab="all">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>All</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <!-- Contenido de la pestaña "All" -->
+            <div id="tab1-content" class="tab-content">
+              <!-- Tu contenido aquí -->
+            </div>
+          </ion-content>
+        </ion-tab>
+        <!-- Pestaña "Users" -->
+        <ion-tab tab="user">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Users</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <!-- Contenido de la pestaña "Users" -->
+            <div id="tab2-content" class="tab-content">
+              <!-- Tu contenido aquí -->
+            </div>
+          </ion-content>
+        </ion-tab>
+        <!-- Pestaña "Files" -->
+        <ion-tab tab="file">
+          <ion-header>
+            <ion-toolbar>
+              <ion-title>Files</ion-title>
+            </ion-toolbar>
+          </ion-header>
+          <ion-content>
+            <!-- Contenido de la pestaña "Files" -->
+            <div id="tab3-content" class="tab-content">
+              <!-- Tu contenido aquí -->
+            </div>
+          </ion-content>
+        </ion-tab>
+      </ion-tabs>
+    </ion-content>
+  </ion-app>
+  <!-- Agregar la referencia a los scripts de Ionic -->
+  <script src="https://cdn.jsdelivr.net/npm/ionic@5.6.7/dist/ionic/js/ionic.bundle.js"></script>
+  <!-- Tu archivo de script personalizado (script.js) -->
+  <script src="script.js"></script>
+</body>
+</html>
+
